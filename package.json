@@ -1,7 +1,7 @@
 {
   "name": "strapi-provider-upload-exoscale",
-  "version": "1.0.6",
-  "description": "Exoscale (S3 compatible) upload provider for strapi",
+  "version": "1.0.7",
+  "description": "Exoscale (S3 compatible) upload provider for strapi 4",
   "homepage": "https://strapi.io",
   "keywords": [
     "upload",
@@ -31,7 +31,7 @@
     "url": "https://github.com/xpera-ch/strapi-provider-upload-exoscale/issues"
   },
   "engines": {
-    "node": ">=12.0.0 <=14.x.x",
+    "node": ">=14.0.0 <=16.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT",

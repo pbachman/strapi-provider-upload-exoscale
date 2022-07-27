@@ -13,13 +13,15 @@ npm install strapi-provider-upload-exoscale
 ```javascript
 module.exports = ({ env }) => ({
   upload: {
-    provider: "exoscale",
-    providerOptions: {
-      accessKeyId: env("EXOSCALE_ACCESS_KEY_ID"),
-      secretAccessKey: env("EXOSCALE_ACCESS_SECRET"),
-      region: env("EXOSCALE_REGION"),
-      params: {
-        Bucket: env("EXOSCALE_BUCKETNAME"),
+    config: {
+      provider: "exoscale",
+      providerOptions: {
+        accessKeyId: env("EXOSCALE_ACCESS_KEY_ID"),
+        secretAccessKey: env("EXOSCALE_ACCESS_SECRET"),
+        region: env("EXOSCALE_REGION"),
+        params: {
+          Bucket: env("EXOSCALE_BUCKETNAME"),
+        },
       },
     },
   },
@@ -27,6 +29,7 @@ module.exports = ({ env }) => ({
 ```
 
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Links
